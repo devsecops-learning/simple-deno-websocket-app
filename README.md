@@ -2,10 +2,10 @@
 > INSTALL Required tools
 ```sh
 ## RedHat/CentOS based
-yum install -y git curl
+yum install -y git
 
 ## Debian Based
-apt-get install -y git curl
+apt-get install -y git
 
 ```
 
