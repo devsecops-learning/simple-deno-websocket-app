@@ -1,4 +1,14 @@
 ### Pre requistes
+> INSTALL Required tools
+```sh
+## RedHat/CentOS based
+yum install -y git curl
+
+## Debian Based
+apt-get install -y git curl
+
+```
+
 
 > Install DENO
 ```sh
