@@ -77,5 +77,5 @@ app.use(async (context) => {
   });
 });
 
-console.log("Listening at http://localhost:" + port);
+console.log(`Listening at All IP/Host: 0.0.0.0 and Port:${port}`);
 await app.listen({ port });
