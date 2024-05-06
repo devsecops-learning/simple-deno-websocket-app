@@ -3,7 +3,7 @@ import { Application, Router } from "https://deno.land/x/oak/mod.ts";
 const connectedClients = new Map();
 
 const app = new Application();
-const port = 8080;
+const port = 3000;
 const router = new Router();
 
 // send a message to all connected clients
