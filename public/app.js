@@ -1,8 +1,9 @@
 const myUsername = prompt("Please enter your name") || "Anonymous";
 
 const remote_site = window.location.hostname;
+const remote_port = window.location.port;
 
-const ws_url = `ws://${remote_site}:8080/start_web_socket?username=${myUsername}`
+const ws_url = `ws://${remote_site}:${remote_port}/start_web_socket?username=${myUsername}`
 
 const socket = new WebSocket(ws_url);
 
