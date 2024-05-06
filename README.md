@@ -19,5 +19,9 @@ deno --version
 
 ### Run
 ```sh
+git clone https://github.com/devsecops-learning/simple-deno-websocket-app
+
+cd simple-deno-websocket-app
+
 deno run --allow-read --allow-net server.js
 ```
