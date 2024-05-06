@@ -1,7 +1,10 @@
 const myUsername = prompt("Please enter your name") || "Anonymous";
-const socket = new WebSocket(
-  `ws://localhost:8080/start_web_socket?username=${myUsername}`
-);
+
+const remote_site = window.location.hostname;
+
+const ws_url = `ws://${remote_site}:8080/start_web_socket?username=${myUsername}`
+
+const socket = new WebSocket(ws_url);
 
 socket.onmessage = (m) => {
   const data = JSON.parse(m.data);
